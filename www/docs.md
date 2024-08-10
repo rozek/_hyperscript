@@ -126,6 +126,14 @@ Hyperscript is a dependency-free JavaScript library that can be included in a we
   <script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
   ~~~
 
+If you are using a build step:
+
+  ~~~ js
+  import _hyperscript from 'hyperscript.org';
+
+  _hyperscript.browserInit();
+  ~~~
+
 After you've done this, you can begin adding hyperscript to elements:
 
   ~~~ html
@@ -541,7 +549,7 @@ If you wish to assign an identifier to the new object you can use the ` called `
   log myURL
   ~~~
 
-You can also use [`query literals`](/expressions/query_references), discussed [below](#dom_literals), to create new HTML content:
+You can also use [`query literals`](/expressions/#query-literals), discussed [below](#dom-literals), to create new HTML content:
 
   ~~~ hyperscript
   make an <a.navlink/> then put it after me
